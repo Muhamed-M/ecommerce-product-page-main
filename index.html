@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E - Commerce Product Page</title>
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="main">
+    <nav>
+      <div class="flex">
+        <img id="menu-btn" src="images/icon-menu.svg">
+        <a href="index.html" class="logo"><img src="images/logo.svg"></a>
+        <div class="navigation">
+          <ul>
+            <img id="close-btn" src="images/icon-close.svg">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile">
+        <img id="cart-btn" src="images/icon-cart.svg">
+        <!-- DROPDOWN FOR CART -->
+        <div class="cart-dropdown">
+          <h2>Cart</h2>
+          <div id="cart"><p id="placeholder">Your cart is empty.</p></div>
+        </div>
+        <img class="avatar" src="images/image-avatar.png">
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="image-content">
+        <div class="image">
+          <img class="big-image" src="images/image-product-1.jpg">
+          <span id="prev-btn-mob"><img src="images/icon-previous.svg"></span>
+          <span id="next-btn-mob"><img src="images/icon-next.svg"></span>
+        </div>
+        <div class="small-images">
+          <img class="active" src="images/image-product-1-thumbnail.jpg">
+          <img src="images/image-product-2-thumbnail.jpg">
+          <img src="images/image-product-3-thumbnail.jpg">
+          <img src="images/image-product-4-thumbnail.jpg">
+        </div>
+      </div>
+      <!-- <===== LIGHTBOX START =====> -->
+      <div class="lightbox-container">
+        <div class="lightbox">
+          <svg id="close" width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 
+            9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 
+            4.596L11.596.782Z" fill="#FFF" fill-rule="evenodd" id="close"/>
+          </svg>
+          <div class="lightbox-main">
+            <img src="images/image-product-1.jpg" class="big-image">
+            <span id="prev-btn"><img src="images/icon-previous.svg"></span>
+            <span id="next-btn"><img src="images/icon-next.svg"></span>
+          </div>
+          <div class="small-images">
+            <img class="active" src="images/image-product-1-thumbnail.jpg">
+            <img src="images/image-product-2-thumbnail.jpg">
+            <img src="images/image-product-3-thumbnail.jpg">
+            <img src="images/image-product-4-thumbnail.jpg">
+          </div>
+        </div>
+      </div>
+      <!-- <===== LIGHTBOX END =====> -->
+      <div class="text-content">
+        <h4>SNEAKER COMPANY</h4>
+        <h1>Fall Limited Edition <br> Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion.
+           Featuring a durable rubber outer sole, they'll withstand everything
+           the weather can offer.
+        </p>
+        <div class="price">
+          <div class="flex">
+            <span>$125.00</span>
+            <span>50%</span>
+          </div>
+          <del>$250.00</del>
+        </div>
+        <div class="cart">
+          <div class="counter">
+            <img id="minus-btn" src="images/icon-minus.svg">
+            <span id="display">0</span>
+            <img id="plus-btn" src="images/icon-plus.svg">
+          </div>
+          <button class="add-btn"><img src="images/icon-cart-white.svg"> Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
